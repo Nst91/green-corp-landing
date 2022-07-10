@@ -115,20 +115,186 @@ body {
     }
   }
 
-  .form__containter {
-    width: 550px;
+  .features{
+padding: 115px 60px;
+background-color: #fff;
+
+  }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+ .card{
+  padding-top: 35px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #D9E4E6;
+  border-radius: 5px;
+  }
+
+.card p{
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+  }  
+
+.card__logo {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #eaeff9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-solar-panel{
+color: #ffb406;
+}
+
+.text{
+color: #ad1714;
+}
+
+.fa-chart-line-up{
+color: #22a030;
+}
+
+.features__border{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #E6EAF4;
+}
+
+.features__feedback{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__feedback-left{
+  padding-right: 10px;
+}
+
+.features__feedback-left h2{
+  font-size: 48px;
+}
+.features__feedback-left p{
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.features__feedback-right{
+  display: flex;
+  justify-content: center;
+}
+
+.features__box{
+padding: 30px 40px 25px 40px;
+color: #fff;
+border-radius: 25px;
+}
+
+.features__box h3{
+margin-top: 0px;
+margin-bottom: 20px;
+font-size: 48px;
+}
+
+.features__savings-box{
+  background-color: #dc5e26;
+  box-shadow: 0 6px 0px rgb(221 95 38 / 20%);
+  margin-right: 30px;
+}
+
+.features__rate-box{
+  background-color: #1D263A;
+  box-shadow: 0 6px 0px rgb(29 38 58 / 20%);
+}
+
+.fa-star{
+color:  #ff7039;
+}
+
+.promo{
+  display: flex;
+  justify-content: center;
+}
+
+.promo__image{
+  flex-shrink: 0;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(img/promo.jpg);
+}
+
+.promo__right{
+  background-color: #dd5f26;
+  padding: 160px 60px;
+}
+
+.promo__text{
+  background-color: white;
+  padding: 30px 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+.promo__text p{
+  opacity: 0.8;
+}
+
+.promo__text p::before{
+  content: '';
+  display: inline-block;
+  background-color: #ec6b29;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 10px; 
+  height: 10px;
+}
+
+.promo__button{
+  display: flex;	
+  justify-content: center;
+}
+
+.promo__button button{
+  background-color:#107b1c;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+}
+
+.fa-chevron-right{
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.form__containter {
+  width: 550px; 
     }
 
   .form {
-    background-color: #1D263A;
-    color: #fff;
-    padding-top: 115px;
-    padding-bottom: 115px;
-    text-align: center;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    
+  background-color: #1D263A;
+  color: #fff;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  text-align: center;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
   }
 
   .form h1 {
@@ -220,7 +386,7 @@ body {
     margin-right: 80px;
   }
 
-  h3 {
+  .footer__grouph3 {
     font-size: 16px;
     opacity: 0.7;
     margin-bottom: 30px;
@@ -260,6 +426,13 @@ body {
       width: 75px;
       height: 75px;
   }
+  .features{
+    padding: 50px 10px;
+    }
+
+  .cards{
+    grid-template-columns: auto;
+  }
     .form {
       padding: 50px 10px;
     }
@@ -273,7 +446,41 @@ body {
     .footer__container {
       flex-direction: column;
     }   
-  
+    .features__feedback{
+      flex-direction: column;
+    }
+    .features__feedback-left{
+      padding-right: 0px;
+    }
+    .features__feedback-left h2{
+      font-size: 36px;
+    }
+    .features__feedback-right{
+      flex-direction: column;
+    }
+    .features__box h3{
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-size: 36px;
+      }
+    .features__savings-box{
+      background-color: #dc5e26;
+      box-shadow: 0 6px 0px rgb(221 95 38 / 20%);
+      margin-right: 0px;
+      margin-bottom: 30px;
+      }
+
+  .promo__image{
+  width: 100%;
+  height: 500px;
+    }
+    
+  .promo{
+    flex-direction: column-reverse;
+  }
+  .promo__right{
+    padding: 50px 10px;
+  }
 }
 
 @media (min-width: 720px) and (max-width: 1024px) {
