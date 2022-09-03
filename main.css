@@ -51,6 +51,7 @@ body {
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
   }
 
   .about__info {
@@ -170,6 +171,7 @@ color: #22a030;
   margin-top: 50px;
   margin-bottom: 50px;
   border: 1px solid #E6EAF4;
+  width: 100%;
 }
 
 .features__feedback{
@@ -179,7 +181,7 @@ color: #22a030;
 }
 
 .features__feedback-left{
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .features__feedback-left h2{
@@ -275,6 +277,7 @@ color:  #ff7039;
   font-size: 18px;
   font-weight: 600;
   padding: 15px 30px;
+  box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
 }
 
 .fa-chevron-right{
@@ -450,13 +453,14 @@ color:  #ff7039;
       flex-direction: column;
     }
     .features__feedback-left{
-      padding-right: 0px;
+      margin-right: 0px;
     }
     .features__feedback-left h2{
       font-size: 36px;
     }
     .features__feedback-right{
       flex-direction: column;
+      align-items: initial;
     }
     .features__box h3{
       margin-top: 0px;
@@ -498,4 +502,11 @@ color:  #ff7039;
     width: 75px;
     height: 75px;
 }
+}
+
+.orb-canvas {
+  position: absolute;
+  height: 100%;
+  margin-top: 0;
+  margin-right: 0;
 }
